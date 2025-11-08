@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bingo Number Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="grid" id="grid"></div>
+  <div class="right">
+    <div id="display">--</div>
+    <div id="controls">
+      <button id="generateBtn">Generate Number</button>
+      <button id="prevBtn">Show Previous Numbers</button>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="te">Telugu</option>
+      </select>
+      <button id="autoBtn">Start Auto Generate</button>
+      <button id="resetBtn">Reset Game</button>
+    </div>
+  </div>
+</div>
+
+<!-- Previous Numbers Popup -->
+<div id="prevPopup">
+  <div class="popup-box">
+    <h2>Previous Numbers</h2>
+    <div id="prevList">No numbers yet.</div>
+    <button id="closePrev">Close</button>
+  </div>
+</div>
+
+<!-- Reset confirmation popup -->
+<div id="confirmPopup">
+  <div class="popup-box">
+    <h2>Do you really want to reset the game?</h2>
+    <div class="popup-buttons">
+      <button class="yes-btn" id="yesReset">Yes</button>
+      <button class="cancel-btn" id="cancelReset">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
